@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Lift Consulting</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <style>
+        .review-slider {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .review-card {
+            min-width: 300px;
+            max-width: 400px;
+            flex-shrink: 0;
+        }
+
+        .review-container {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .review-buttons {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .background-decor {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            filter: blur(100px);
+        }
+
+        .background-decor:nth-child(1) {
+            top: 10%;
+            left: 20%;
+        }
+
+        .background-decor:nth-child(2) {
+            top: 50%;
+            right: 20%;
+        }
+
+        .background-decor:nth-child(3) {
+            bottom: 10%;
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
+        <div class="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
+            <svg class="absolute left-0 hidden h-full text-white transform -translate-x-1/2 lg:block" viewBox="0 0 100 100" fill="currentColor" preserveAspectRatio="none slice">
+                <path d="M50 0H100L50 100H0L50 0Z"></path>
+            </svg>
+            <img
+                class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
+                src="https://volksliftea.co.ke/wp-content/uploads/2018/03/bg-1.jpg"
+                alt="Elevator consulting"
+            />
+        </div>
+        <div class="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
+            <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
+                <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-white uppercase rounded-full" style="background-color: #121481;">
+                    brand new solution
+                </p>
+                <h2 class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none animate__animated animate__fadeInLeft">
+                    Elevate Your Building's Potential with <span style="color: #121481;">Lift Consulting Solutions!</span>
+                </h2>
+                <p class="pr-5 mb-5 text-base text-gray-700 md:text-lg animate__animated animate__fadeInLeft animate__delay-1s">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae explicabo.
+                </p>
+                <div class="flex items-center">
+                    <a
+                        href="/"
+                        class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md focus:shadow-outline focus:outline-none animate__animated animate__fadeInUp animate__delay-2s"
+                        style="background-color: #121481;"
+                    >
+                        Get started
+                    </a>
+                    <a href="/" aria-label="" class="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 animate__animated animate__fadeInUp animate__delay-2s">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-16" style="background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 lg:py-16">
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+                <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full animate__animated animate__fadeInRight">
+                    <img
+                        alt="Elevator consulting"
+                        src="https://jobs-amst.com/app/uploads/2021/01/Elevator-Interior-Design.png"
+                        class="absolute inset-0 h-full w-full object-cover"
+                    />
+                </div>
+
+                <div class="flex items-center justify-center lg:py-24">
+                    <div class="bg-white p-8 rounded-lg shadow-lg animate__animated animate__fadeInLeft">
+                        <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500 sm:text-4xl">
+                            About Us
+                        </h2>
+                        <p class="mt-4 text-gray-700">
+                            ElevateConsult Solutions is a leading elevator consulting company specializing in providing expert guidance and services related to elevators and vertical transportation systems. With years of experience in the industry, our team of seasoned professionals is dedicated to delivering innovative solutions tailored to meet the unique needs of our clients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------Services section ----------------->
+    <section class="relative flex flex-wrap py-24 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500">
+        <div class="absolute inset-0">
+            <div class="background-decor"></div>
+            <div class="background-decor"></div>
+            <div class="background-decor"></div>
+        </div>
+        <div class="w-full text-center mb-16">
+            <h2 class="text-4xl font-bold text-white animate__animated animate__bounceInDown">Services</h2>
+        </div>
+        <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 px-4 mb-4">
+            <div class="flex flex-col items-center p-8 rounded-lg shadow-md bg-white animate__animated animate__fadeInUp">
+                <span class="material-icons text-4xl text-purple-900 mb-4">build</span>
+                <h3 class="text-2xl font-semibold text-gray-800">Consulting Services</h3>
+                <p class="text-gray-600 text-center">Our experienced consultants offer comprehensive advice on elevator maintenance, modernization, and new installations to ensure optimal performance and safety of your vertical transportation systems.</p>
+            </div>
+        </div>
+        <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 px-4 mb-4">
+            <div class="flex flex-col items-center p-8 rounded-lg shadow-md bg-white animate__animated animate__fadeInUp animate__delay-1s">
+                <span class="material-icons text-4xl text-purple-900 mb-4">settings</span>
+                <h3 class="text-2xl font-semibold text-gray-800">Modernization Solutions</h3>
+                <p class="text-gray-600 text-center">We provide cost-effective modernization plans to enhance the efficiency, reliability, and aesthetics of aging elevator systems, keeping them up-to-date with the latest technologies and standards.</p>
+            </div>
+        </div>
+        <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 px-4 mb-4">
+            <div class="flex flex-col items-center p-8 rounded-lg shadow-md bg-white animate__animated animate__fadeInUp animate__delay-2s">
+                <span class="material-icons text-4xl text-purple-900 mb-4">build_circle</span>
+                <h3 class="text-2xl font-semibold text-gray-800">Maintenance Strategies</h3>
+                <p class="text-gray-600 text-center">Our proactive maintenance programs are designed to minimize downtime, reduce operational costs, and extend the lifespan of elevator equipment, ultimately improving the overall performance of your building's elevators.</p>
+            </div>
+        </div>
+        <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 px-4 mb-4">
+            <div class="flex flex-col items-center p-8 rounded-lg shadow-md bg-white animate__animated animate__fadeInUp animate__delay-3s">
+                <span class="material-icons text-4xl text-purple-900 mb-4">school</span>
+                <h3 class="text-2xl font-semibold text-gray-800">Training and Education</h3>
+                <p class="text-gray-600 text-center">ElevateConsult Solutions offers training sessions and educational programs for building owners, facility managers, and maintenance staff to enhance their knowledge and understanding of elevator operations and safety protocols.</p>
+            </div>
+        </div>
+    </section>
+    <!----------end of services----------->
+
+    <!-----------Review section------->
+    <section class="flex flex-col py-24 bg-gray-50">
+        <h2 class="text-4xl font-bold text-center text-purple-900 mb-16 animate__animated animate__bounceInDown">Customer Reviews</h2>
+        <div class="relative review-container mx-auto max-w-screen-lg">
+            <div class="review-slider">
+                <div class="review-card flex flex-col items-center p-8 rounded-lg shadow-md bg-white mx-4 animate__animated animate__fadeInUp">
+                    <div class="flex items-center mb-4">
+                        <span class="material-icons text-4xl text-purple-900">star</span>
+                        <span class="material-icons text-4xl text-purple-900 ml-2">star</span>
+                        <span class="material-icons text-4xl text-purple-900 ml-2">star</span>
+                        <span class="material-icons text-4xl text-purple-900 ml-2">star</span>
+                        <span class="material-icons text-4xl text-purple-900 ml-2">star</span>
+                    </div>
+                    <p class="text-gray-600 text-center">Excellent service! They were prompt, professional, and did a great job repairing our elevator.</p>
+                    <p class="text-gray-800 font-semibold text-center">- John Smith</p>
+                </div>
+                <div class="review-card flex flex-col items-center p-8 rounded-lg shadow-md bg-white mx-4 animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="flex items-center mb-4">
+                        <span class="material-icons text-4xl text-purple-900">star</span>
+                        <span class="material-icons text-4xl text-purple-900 ml-2">star</span>
+                        <span class="material-icons text-4xl text-purple-900 ml-2">star</span>
+                        <span class="material-icons text-4xl text-purple-900 ml-2">star</span>
+                        <span class="material-icons text-4xl text-purple-900 ml-2">star</span>
+                    </div>
+                    <p class="text-gray-600 text-center">Great experience! The team was very knowledgeable and helpful throughout the entire process.</p>
+                    <p class="text-gray-800 font-semibold text-center">- Jane Doe</p>
+                </div>
+                <!-- Add more review cards as needed -->
+            </div>
+            <button class="absolute review-buttons left-0 p-4 rounded-l-full bg-purple-900 hover:bg-opacity-75 focus:outline-none" id="prevButton">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white transform rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+            <button class="absolute review-buttons right-0 p-4 rounded-r-full bg-purple-900 hover:bg-opacity-75 focus:outline-none" id="nextButton">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+        </div>
+    </section>
+    <!--------end of review section------->
+  <!-------------------Contact Us--------->
+  <section class="bg-gradient-to-t from-purple-200 via-purple-300 to-white dark:bg-gradient-to-t dark:from-purple-900 dark:via-purple-800 dark:to-gray-800" id="contact">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <div class="mb-4">
+            <div class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
+                <h2 class="font-heading mb-4 font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-5xl">
+                    Contact Us
+                </h2>
+                <p class="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-gray-400">Elevator Consulting Company specializing in innovative solutions for vertical transportation.</p>
+            </div>
+        </div>
+        <div class="flex items-stretch justify-center">
+            <div class="grid md:grid-cols-2">
+                <div class="h-full pr-6">
+                    <p class="mt-3 mb-12 text-lg text-gray-600 dark:text-gray-400">
+                        We're here to assist you with any inquiries you may have regarding our elevator consulting services. Whether you're seeking innovative solutions for vertical transportation or have questions about our expertise, feel free to get in touch with us.
+                    </p>
+                    <ul class="mb-6 md:mb-0">
+                        <li class="flex items-center">
+                            <div class="flex h-10 w-10 items-center justify-center rounded bg-purple-900 text-gray-50">
+                                <i class="material-icons">location_on</i>
+                            </div>
+                            <div class="ml-4 mb-4">
+                                <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Our Address</h3>
+                                <p class="text-gray-600 dark:text-gray-400">Addis Abeba Ethiopia, Bole Road</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="flex h-10 w-10 items-center justify-center rounded bg-purple-900 text-gray-50">
+                                <i class="material-icons">phone</i>
+                            </div>
+                            <div class="ml-4 mb-4">
+                                <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Contact</h3>
+                                <p class="text-gray-600 dark:text-gray-400">Phone: +251923780726</p>
+                                <p class="text-gray-600 dark:text-gray-400">Website: <a href="http://www.skylift.com" class="text-blue-500 dark:text-blue-400">www.skylift.com</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card h-fit max-w-6xl p-5 md:p-12" id="form">
+                    <h2 class="mb-4 text-2xl font-bold dark:text-white">Ready to Get Started?</h2>
+                    <form id="contactForm">
+                        <div class="mb-6">
+                            <div class="mx-0 mb-1 sm:mb-4">
+                                <label for="name" class="pb-1 text-xs uppercase tracking-wider"></label>
+                                <input type="text" id="name" autocomplete="given-name" placeholder="Your name" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="name">
+                            </div>
+                            <div class="mx-0 mb-1 sm:mb-4">
+                                <label for="email" class="pb-1 text-xs uppercase tracking-wider"></label>
+                                <input type="email" id="email" autocomplete="email" placeholder="Your email address" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="email">
+                            </div>
+                        </div>
+                        <div class="mx-0 mb-1 sm:mb-4">
+                            <label for="textarea" class="pb-1 text-xs uppercase tracking-wider"></label>
+                            <textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <!------------end of contact us--------->
+  <footer class="bg-gray-50 mt-8">
+  <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <div class="flex justify-center text-teal-600 sm:justify-start">
+        <svg class="h-8" viewBox="0 0 118 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Your SVG path data -->
+        </svg>
+      </div>
+      <div class="mt-4 sm:mt-0 sm:ml-4 text-center sm:text-right">
+        <p class="text-sm leading-5 text-gray-500">© 2024 Your Restaurant. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
